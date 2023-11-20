@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css"> 
+    <script src="https://kit.fontawesome.com/b4a1152e0f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="res" >
+        <h1 align="center"><i><u>REGISTRATION FORM</u></i></h1>
+        <form id="user-form" >
+            <!--Name-->
+            <div class="inputField">
+              <i class="fa-solid fa-user-tie"></i>
+              <input id="name" name="name" type="text" placeholder="Name" required>
+            </div>
+            <!--Email-->
+            <div class="inputField">
+              <i class="fa-solid fa-envelope"></i>
+              <input id="email" name="email" type="email" placeholder="Email" required>
+            </div>
+            <!--Password-->
+            <div class="inputField">
+              <i class="fa-solid fa-lock"></i>
+              <input id="password" name="password" type="password" placeholder="Password" required>
+            </div>
+            <!--DOB-->
+            <div class="inputField">
+              <input id="dob" name="dob" type="date" placeholder="Date of Birth" required>
+            </div>
+          <!--Terms and conditions-->
+          <div>
+            <input id="tick_mark" name="tick_mark" type="checkbox"  id="checkbox" name="checkbox" >
+            <label for="checkbox">Accept Terms and conditions</label>
+          </div>
+          <!--Submit button-->
+          <div  class="buttonField">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+      <div>
+        <!--Table heading-->
+        <h1 align="center"><i><u>ENTRIES</u></i></h1>
+      </div>
+    <div id="user-entries">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email Address</th>
+              <th>Password</th>
+              <th>Date of Birth</th>
+              <th>Status of Accepted terms</th>
+            </tr>
+          </thead>
+          <tbody id="show_the_date"></tbody>
+        </table>
+    </div>
+  </body>
+  <script src="./index.js"></script>>
+</html>
